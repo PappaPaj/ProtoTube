@@ -1,0 +1,20 @@
+{
+    "name": "ProtoTube",
+    "description": "YouTube but without the distraction",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+      },
+    "permissions": ["storage","tabs"],
+    "action": {
+        "default_title": "ProtoTube",
+        "default_popup": "popup.html"
+      },
+    "content_scripts": [
+    {
+        "matches": ["https://*.youtube.com/*"],
+        "js": ["contentScript.js"]
+    }
+    ]
+  }
