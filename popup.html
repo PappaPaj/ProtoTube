@@ -1,9 +1,27 @@
 <link href="popup.css" rel="stylesheet" type="text/css" />
+<link href="stack.css" rel="stylesheet" type="text/css" />
 <script type="module" src="popup.js"></script>
 
 <div class="container">
   <div>
     <div class="title">ProtoTube</div>
-
+    <div class="flex vstack">
+      <div class="flex hstack --left">
+        
+        <label class="switch">
+          <input type="checkbox" id="subonly-toggle">
+          <span class="slider round"></span>
+        </label>
+        <p>Subscription-Only Feed</p>
+      </div>
+      <div class="flex vstack">
+        <div class="flex hstack --left">
+          <label class="switch">
+            <input type="checkbox" id="noshorts-toggle">
+            <span class="slider round"></span>
+          </label>
+          <p>No Shorts</p>
+        </div>
+    </div>
   </div>
 </div>
